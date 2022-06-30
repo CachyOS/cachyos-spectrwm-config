@@ -1,4 +1,4 @@
-# Spectrwm
+# cachyos-spectrwm-config
 
 [spectrwm](https://github.com/conformal/spectrwm)
 
