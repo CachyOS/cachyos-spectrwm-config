@@ -9,7 +9,7 @@ url="https://github.com/cachyos/$pkgname"
 license=('GPL')
 makedepends=('coreutils')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
-sha512sums=('')
+sha512sums=('skip')
 depends=('cachyos-zsh-config'
          'cachyos-picom-config'
          'feh'
