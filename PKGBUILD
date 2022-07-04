@@ -2,7 +2,7 @@
 
 pkgname=cachyos-spectrwm-config
 pkgdesc='CachyOS Spectrwm config'
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 arch=('any')
 url="https://github.com/cachyos/$pkgname"
@@ -10,10 +10,14 @@ license=('GPL')
 makedepends=('coreutils')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
 sha512sums=('skip')
-depends=('cachyos-zsh-config'
-         'cachyos-picom-config'
+depends=('zsh'
+         'picom'
+         'qt5ct'
+         'krusader-git'
+         'lxqt-sudo'
          'feh'
          'pavucontrol'
+         'octopi'
          'xlockmore'
          'polkit-gnome'
          'dunst'
@@ -26,7 +30,7 @@ depends=('cachyos-zsh-config'
          'noto-fonts-emoji'
          'ttf-hack'
          'ttf-fira-sans'
-         'cachyos-nord-gtk-theme-git')
+         'pcmanfm-qt')
 install=$pkgname.install
 provides=('cachyos-desktop-settings')
 conflicts=('cachyos-desktop-settings')

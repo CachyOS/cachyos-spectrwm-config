@@ -104,12 +104,12 @@ ${color4}Linux: ${color1} (${fs_type})    ${alignc}${color1}${fs_size /} > ${col
 ${color4}Dysk Zapis-> ${alignc}${color1}${diskio_read}/s${alignr}${color1}${diskio_write}/s ${color4} <-Dysk Odczyt
 
 ${color4}Net Kabel: ${color6}${hr}
-${alignc}${color4}IP:  ${color1}${texeci 20 dig +short ip92.ip-51-83-138.eu @54.38.142.226} ${execpi 4 echo "\${color} ping: \${color #289CD5}$(ping -W 1 -c 1 51.83.138.92 -q | grep rtt | egrep [0-9]+\.[0-9]+ -o | head -n 2 | tail -n 1)\${font}\${color} ms"}
+${alignc}${color4}IP:  
 ${color4}Pobieranie:  ${color1}${downspeed enp1s0f1}  ${alignr} ${alignr} ${color1} ${upspeed enp1s0f1}  ${color4}:Wysyłanie
 ${color4}Pobrane: ${color1}${totaldown enp1s0f1} ${alignr}${color1}${totalup enp1s0f1} ${color4}:Wysłane
 
 ${color4}WireGuad VPN: ${color6}${hr}
-${alignc}${color4}IP:  ${color1}${addr wg0} ${execpi 4 echo "\${color} ping: \${color #289CD5}$(ping -W 1 -c 1 10.0.2.1 -q | grep rtt | egrep [0-9]+\.[0-9]+ -o | head -n 2 | tail -n 1)\${font}\${color} ms"}
+${alignc}${color4}IP:  
 ${color4}Pobieranie:  ${color1}${downspeed wg0}  ${alignr} ${alignr} ${color1} ${upspeed wg0}  ${color4}:Wysyłanie
 ${color4}Pobrane: ${color1}${totaldown wg0} ${alignr}${color1}${totalup wg0} ${color4}:Wysłane
 

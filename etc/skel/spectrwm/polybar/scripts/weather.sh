@@ -1,3 +1,3 @@
 #!/bin/sh
 
-curl  -s 'https://pl.wttr.in/Łódź?format=3'
+curl  -s 'https://de.wttr.in/Berlin?format=3'

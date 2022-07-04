@@ -1,14 +1,14 @@
 #!/bin/bash
 
-[[ ! "$@" ]] && miasto=Łódź || miasto="${1}"
+[[ ! "$@" ]] && miasto=Berlin || miasto="${1}"
 [[ ! "$2" ]] && typ="1" || typ="${2}"
 
 case "${typ}" in
-	1) curl -s "https://pl.wttr.in/${miasto}" #domyslny wykres
+	1) curl -s "https://de.wttr.in/${miasto}" #domyslny wykres
 		echo -e ;;
-	4) curl -s "https://pl.wttr.in/${miasto}?format=%c" ;; #polybar
-	2) curl -s "https://pl.wttr.in/${miasto}?format=%c+%t+%P" ;; #polybar krótki
-	3) curl -s "https://pl.wttr.in/${miasto}?format=j1" > /tmp/pogoda #lista szczegolowa
+	4) curl -s "https://de.wttr.in/${miasto}?format=%c" ;; #polybar
+	2) curl -s "https://de.wttr.in/${miasto}?format=%c+%t+%P" ;; #polybar krótki
+	3) curl -s "https://de.wttr.in/${miasto}?format=j1" > /tmp/pogoda #lista szczegolowa
 
 		#temperatura aktualna
 		temp_odczuwalna="$( jq '.current_condition[0] .FeelsLikeC' /tmp/pogoda | sed 's/"//g' )°C"

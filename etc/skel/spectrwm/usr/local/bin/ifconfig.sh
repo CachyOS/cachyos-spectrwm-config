@@ -9,4 +9,3 @@ echo 128000 > /proc/sys/vm/min_free_kbytes &
 #/sbin/ifconfig wlp2s0 txqueuelen 200 &
 #/sbin/ifconfig wlp2s0 mtu 1500 up &
 sysctl vm.swappiness=1 &
-systemctl restart anydesk
